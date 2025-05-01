@@ -1,3 +1,4 @@
+import 'package:e_commerce/pages/product_list_page.dart';
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:e_commerce/utils/product_seeds.dart';
@@ -98,7 +99,14 @@ class _ProductUploadPageState extends State<ProductUploadPage> {
                 const SizedBox(height: 20),
                 ElevatedButton(
                     onPressed: _saveProduct,
-                    child: const Text('제품 저장'))
+                    child: const Text('제품 저장')),
+                ElevatedButton(
+                    onPressed: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (_) => ProductListPage()));
+                    },
+                    child: const Text('제품 목록')),
               ],
             ),
           )
