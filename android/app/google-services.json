@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "861721453430",
+    "project_id": "sanguine-theory-209009",
+    "storage_bucket": "sanguine-theory-209009.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:861721453430:android:ac67a507f33941d1285057",
+        "android_client_info": {
+          "package_name": "com.oraclejava.e_commerce"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCxkJwv8xsGWxwX6Rw6cXs__o6ylJhY3Vg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
