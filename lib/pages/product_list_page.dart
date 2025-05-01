@@ -1,4 +1,5 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:e_commerce/pages/product_detail_page.dart';
 import 'package:flutter/material.dart';
 
 class ProductListPage extends StatelessWidget {
@@ -62,6 +63,13 @@ class ProductCard extends StatelessWidget {
         title: Text(data['title'] ?? '없는 제품명'),
         subtitle: Text('${data['category']} - ${data['cost']}원'),
         trailing: const Icon(Icons.chevron_right),
+        onTap: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(
+                builder: (context) => ProductDetailPage(product: data)
+            ));
+        },
       ),
     );
   }
